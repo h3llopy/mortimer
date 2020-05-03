@@ -22,8 +22,10 @@ curl -o /etc/systemd/system/docker-compose-app.service https://raw.githubusercon
 systemctl enable docker-compose-app
 
 # copy and unzip addons folder
-curl -o addons.zip -L https://github.com/amcgeough/mortimer/raw/master/awsdeploy/addons.zip
-unzip addons.zip
+sudo curl -o /srv/docker/addons.zip -L https://github.com/amcgeough/mortimer/raw/master/awsdeploy/addons.zip
+sudo apt install unzip
+sudo unzip /srv/docker/addons.zip -d /srv/docker
+sudo rm -f /srv/docker/addons.zip
 
 # start up the application via docker-compose
 docker-compose -f /srv/docker/docker-compose.yml up -d
