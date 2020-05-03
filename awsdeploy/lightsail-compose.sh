@@ -28,4 +28,4 @@ sudo unzip /srv/docker/addons.zip -d /srv/docker
 sudo rm -f /srv/docker/addons.zip
 
 # start up the application via docker-compose
-docker-compose -f /srv/docker/docker-compose.yml up -d
+sudo docker-compose -f /srv/docker/docker-compose.yml up -d
