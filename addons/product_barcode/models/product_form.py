@@ -32,7 +32,8 @@ class ProductAutoBarcode(models.Model):
     def create(self, vals):
         res = super(ProductAutoBarcode, self).create(vals)
         ean = generate_ean(str(res.id))
-        res.barcode = ean
+        # res.barcode = ean
+        res.barcode = ean if res.barcode == False else res.barcode
         print("res.barcode",res.barcode)
         return res
 
@@ -92,6 +93,7 @@ class ProductTemplateAutoBarcode(models.Model):
         templates = super(ProductTemplateAutoBarcode, self).create(vals_list)
         ean = generate_ean(str(templates.id))
         templates.barcode = ean
+        templates.barcode = ean if templates.barcode == False else templates.barcode
         return templates
 
 
