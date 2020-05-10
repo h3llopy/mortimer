@@ -9,7 +9,7 @@ services:
         - 443:443
     volumes:
         - ./certs:/etc/nginx/certs
-        - ./nginx.conf:/etc/nginx/nginx.conf:ro
+        - ./nginx.conf:/etc/nginx/nginx.conf.d
   web:
     image: andrewmc/mortimer_web:0.0.1
     depends_on:
