@@ -13,6 +13,7 @@ services:
         - ./odoo:/etc/odoo
   web:
     image: andrewmc/mortimer_web:0.0.1
+    container_name: web
     depends_on:
       - db
     ports:
