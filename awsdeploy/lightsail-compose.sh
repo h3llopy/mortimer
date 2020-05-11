@@ -14,6 +14,7 @@ chmod +x /usr/local/bin/docker-compose
 # if you change this, change the systemd service file to match
 # WorkingDirectory=[whatever you have below]
 mkdir /srv/docker
+sudo curl -o /srv/docker/Dockerfile https://raw.githubusercontent.com/amcgeough/mortimer/master/awsdeploy/Dockerfile
 sudo curl -o /srv/docker/docker-compose.yml https://raw.githubusercontent.com/amcgeough/mortimer/master/awsdeploy/docker-compose.yml
 
 # copy in systemd unit file and register it so our compose file runs 
@@ -28,7 +29,7 @@ sudo unzip /srv/docker/addons.zip -d /srv/docker
 sudo rm -f /srv/docker/addons.zip
 
 # get nginx.conf file
-sudo curl -o nginx.conf https://raw.githubusercontent.com/amcgeough/mortimer/master/awsdeploy/nginx.conf
+sudo curl -o /srv/docker/nginx.conf https://raw.githubusercontent.com/amcgeough/mortimer/master/awsdeploy/nginx.conf
 
 # start up the application via docker-compose
 sudo docker-compose -f /srv/docker/docker-compose.yml up -d
