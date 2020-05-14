@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     build: .
+    image: andrewmc/mortimer_web:0.0.2
     depends_on:
       - db
     ports:

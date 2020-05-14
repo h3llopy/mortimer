@@ -19,13 +19,13 @@ $gray-lighter: lighten($gray-base, 93.5%);
 // Change colors here
 
 // Odoo EE colors
-$brand-primary: #875a7b;
-$brand-secondary: #00A09D;
+// $brand-primary: #875a7b;
+// $brand-secondary: #00A09D;
 //------------------------
-// $brand-primary: #111E6C;
-// $brand-secondary: #5EC269;
+$brand-primary: #2F4F4F;
+$brand-secondary: #998877;
 //------------------------
-
+// sudo vim /srv/docker/addons/backend_theme_v13/static/src/scss/style.scss
 
 $brand-primary-dark: darken($brand-primary, 10%);
 $brand-secondary-dark: darken($brand-secondary, 10%);
