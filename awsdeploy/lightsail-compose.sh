@@ -22,6 +22,7 @@ sudo curl -o /srv/docker/docker-compose.yml https://raw.githubusercontent.com/am
 sudo curl -o /etc/systemd/system/docker-compose-app.service https://raw.githubusercontent.com/amcgeough/mortimer/master/awsdeploy/docker-compose-app.service
 systemctl enable docker-compose-app
 
+# zip -r disable_odoo_online.zip disable_odoo_online
 # copy and unzip addons folder
 sudo curl -o /srv/docker/addons.zip -L https://github.com/amcgeough/mortimer/raw/master/awsdeploy/addons_zip/addons.zip
 sudo apt install unzip
