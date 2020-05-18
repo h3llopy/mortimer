@@ -370,7 +370,6 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 
 .o_menu_apps .dropdown-menu.show {
 	background: transparent url('/dashboard') no-repeat scroll center center / cover;
-
 }
 
 
@@ -390,11 +389,11 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
     font-weight: 400;
     text-overflow: ellipsis;
     white-space: nowrap;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
 }
 
 .o_menu_apps .dropdown-menu.show .o-app-icon {
-	padding: 20px 0 0;
+    padding: 20px 0 0;
 }
 
 .o_menu_apps .dropdown-menu.show .o-app-icon:hover {
