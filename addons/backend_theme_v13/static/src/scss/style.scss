@@ -366,12 +366,13 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
     }
 }
 
+
 // App Dashboard
 
 .o_menu_apps .dropdown-menu.show {
-	background: transparent url('/dashboard') no-repeat scroll center center / cover;
-}
+    background: transparent url('/dashboard') no-repeat scroll center center / cover;
 
+}
 
 .fa-th-large::before {
     content: "\f00a";
@@ -381,6 +382,7 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
     width: 46px;
     font-size: 18px;
     text-align: center;
+
 }
 
 .o-app-name {
@@ -390,15 +392,18 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
     text-overflow: ellipsis;
     white-space: nowrap;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+
 }
 
 .o_menu_apps .dropdown-menu.show .o-app-icon {
     padding: 20px 0 0;
+    
 }
 
 .o_menu_apps .dropdown-menu.show .o-app-icon:hover {
 	box-shadow: 0 8px 15px -10px black;
     transform: translateY(-1px);
+
 }
 
 .dropdown-item.o_app {
@@ -413,4 +418,14 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 
 .o_thread_window .o_thread_window_header {
 	background-color: $brand-primary;
+}
+
+// Hide chat icon top right
+.fa-clock-o::before {
+    color: transparent
+}
+
+// Hide activities icon top right
+.o_mail_messaging_menu_icon {
+    color: transparent
 }

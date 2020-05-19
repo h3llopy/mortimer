@@ -29,6 +29,10 @@ sudo apt install unzip
 sudo unzip /srv/docker/addons.zip -d /srv/docker
 sudo rm -f /srv/docker/addons.zip
 
+# sudo curl -o /srv/docker/addons/sh_barcode_scanner_adv.zip -L https://github.com/amcgeough/mortimer/raw/master/awsdeploy/addons_zip/sh_barcode_scanner_adv.zip
+# sudo unzip /srv/docker/addons/sh_barcode_scanner_adv.zip -d /srv/docker/addons
+# sudo rm -f /srv/docker/addons/sh_barcode_scanner_adv.zip
+
 # get nginx.conf file
 sudo curl -o /srv/docker/nginx.conf https://raw.githubusercontent.com/amcgeough/mortimer/master/awsdeploy/nginx.conf
 
